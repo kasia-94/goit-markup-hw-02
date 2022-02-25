@@ -20,8 +20,7 @@ body {
 /*Logo*/
 .logo {
   text-decoration: none;
-  font-family: Raleway;
-  font-style: normal;
+  font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -44,7 +43,6 @@ body {
 }
 .site-nav {
   list-style: none;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -68,7 +66,6 @@ link:focus {
 /*Auth-nav*/
 .auth-nav {
   list-style: none;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -148,6 +145,17 @@ link:focus {
 .team-list {
   list-style: none;
 }
+.team-list-name {
+  color: var(--main-site-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+.team-list-position {
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.19;
+}
 
 /*Footer*/
 footer {
@@ -162,6 +170,9 @@ footer {
 .buttons {
   list-style: none;
 }
+.button {
+  cursor: pointer;
+}
 
 .portfolio-list {
   list-style: none;
@@ -169,4 +180,25 @@ footer {
 
 .address {
   text-decoration: none;
+  color: var(--header-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.portfolio-list-name {
+  color: var(--main-site-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list-type {
+  color: var(--secondary-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
