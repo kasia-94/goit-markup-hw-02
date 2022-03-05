@@ -56,7 +56,7 @@ body {
   color: var(--navigation-color);
 }
 .site-nav .link:hover,
-link:focus {
+.site-nav .link:focus {
   color: var(--navigation-color);
 }
 .site-nav .link:active {
@@ -76,7 +76,8 @@ link:focus {
   color: var(--auth-nav-color);
 }
 .auth-nav .link:hover,
-.link:active {
+.auth-nav .link:focus,
+.auth-nav .link:active {
   color: var(--logo-color-first);
 }
 
@@ -147,7 +148,6 @@ link:focus {
 }
 .team-list-name {
   color: var(--main-site-color);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
 }
@@ -188,7 +188,6 @@ footer {
 }
 .portfolio-list-name {
   color: var(--main-site-color);
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
