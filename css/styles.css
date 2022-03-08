@@ -1,20 +1,22 @@
 :root {
-  --main-site-color: #212121;
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
   --header-color: #ffffff;
   --main-section-color: #2f303a;
+  --second-section-color: #e5e5e5;
   --team-color: #f5f4fa;
-  --footer-color: #2f303a;
   --logo-color-first: #2196f3;
   --logo-color-second: #000000;
-  --navigation-color: #212121;
-  --auth-nav-color: #757575;
-  --secondary-color: #757575;
+  --footer-color: rgba(255, 255, 255, 0.6);
+
+  --main-buttom: #f5f4fa;
+  --active-buttom: #2196f3;
 }
 
 body {
   background-color: var(--header-color);
   font-family: Roboto, sans-serif;
-  color: var(--main-site-color);
+  color: var(--main-text-color);
 }
 
 /*Logo*/
@@ -48,16 +50,16 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.link-active {
+.site-nav .link-active {
   color: var(--logo-color-first);
   text-decoration: none;
 }
 .site-nav .link {
-  color: var(--navigation-color);
+  color: var(--main-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--navigation-color);
+  color: var(--logo-color-first);
 }
 .site-nav .link:active {
   color: var(--logo-color-first);
@@ -71,9 +73,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
 .auth-nav .link {
-  color: var(--auth-nav-color);
+  color: var(--secondary-text-color);
+  font-style: normal;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus,
@@ -106,7 +108,7 @@ body {
 /*Features*/
 .features,
 .work {
-  background-color: var(--header-color);
+  background-color: (--second-section-color);
 }
 
 .features-list {
@@ -147,22 +149,48 @@ body {
   list-style: none;
 }
 .team-list-name {
-  color: var(--main-site-color);
+  color: var(--main-text-color);
   font-weight: 500;
   font-size: 16px;
 }
 .team-list-position {
-  color: var(--secondary-color);
+  color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
 }
 
 /*Footer*/
 footer {
-  background-color: var(--footer-color);
+  background-color: var(--main-section-color);
 }
 .address {
   list-style: none;
+}
+
+.address-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--header-color);
+}
+
+.footer-nav {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.footer-nav .link {
+  color: var(--footer-color);
+  font-style: normal;
+  text-decoration: none;
+}
+
+.footer-nav .link:hover,
+.footer-nav .link:focus,
+.footer-nav .link:active {
+  color: var(--logo-color-first);
 }
 
 /*PORTFOLIO*/
@@ -170,24 +198,41 @@ footer {
 .buttons {
   list-style: none;
 }
-.button {
+
+.button-index {
   cursor: pointer;
+  font-family: Roboto, sans-serif;
+  color: var(--header-color);
+  background-color: var(--active-buttom);
+}
+.button-index:hover,
+.button-index:focus,
+.button-index:active {
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-buttom);
+}
+.button-portfolio {
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-buttom);
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus,
+.button-portfolio:active {
+  color: var(--header-color);
+  background-color: var(--active-buttom);
 }
 
 .portfolio-list {
   list-style: none;
 }
 
-.address {
-  text-decoration: none;
-  color: var(--header-color);
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
 .portfolio-list-name {
-  color: var(--main-site-color);
+  color: var(--main-text-color);
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -195,8 +240,7 @@ footer {
 }
 
 .portfolio-list-type {
-  color: var(--secondary-color);
-  font-weight: normal;
+  color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
