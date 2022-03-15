@@ -9,6 +9,7 @@
   --logo-color-second: #000000;
   --footer-color: rgba(255, 255, 255, 0.6);
   --main-buttom: #f5f4fa;
+  --bottom-index-active: #188ce8;
 }
 
 body {
@@ -112,6 +113,7 @@ body {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  font-size: 14px;
 }
 .features-description {
   color: var(--secondary-text-color);
@@ -181,7 +183,12 @@ body {
   background-color: var(--accent-color);
 }
 .button-index:hover,
-.button-index:focus,
+.button-index:focus {
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--bottom-index-active);
+}
+
 .button-portfolio {
   cursor: pointer;
   color: var(--main-text-color);
@@ -195,6 +202,7 @@ body {
 }
 
 .portfolio-list {
+  text-decoration: none;
 }
 
 .portfolio-list-name {
